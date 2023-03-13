@@ -89,7 +89,37 @@
         android:layout_marginEnd="32dp"
         android:text="Registrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="348dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <RadioButton
+            android:id="@+id/radioManha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manhã" />
+
+        <RadioButton
+            android:id="@+id/radioTarde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarde" />
+
+        <RadioButton
+            android:id="@+id/radioNoite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noite" />
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
